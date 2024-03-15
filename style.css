@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    font-family: "Mulish", sans-serif;
+    --bg-color-1: #312D64;
+    --bg-color-2: #343193;
+    --title-color: #B52184;
+    --text-color: #312D64;
+}
+
+body{
+    font-size: 1.6rem;
+}
+h1, legend{
+    font-size: 3.2rem;
+    color: var(--title-color);
+    font-weight: 700;
+}
+h2{
+    font-size: 3.0rem;
+    color: var(--title-color);
+}
+p{
+    font-size: 2.0rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.first-section{
+    text-align: center;
+    padding: 0 3.3rem 9.3rem;
+}
+.first-section #astronaut-photo{
+    margin-bottom: 1.7rem;
+    width: 100%;
+}
+.first-section .title{
+    margin-bottom: 3.5rem;
+}
+.sectionMoons{
+    display: flex;
+    
+    flex-direction: column;
+    gap: 5.0rem;
+
+    padding: 5.6rem 4.0rem;
+}
+.sectionMoons p {
+    font-size: 1.6rem;
+}
+
+.sectionMoons .moons{
+    background-color: #fff;
+    border-radius: 2.0rem;
+    padding: 2.6rem 5.6rem 2.6rem 2.6rem;
+
+    
+}
+.moons img{
+    width: 8.0rem;
+    height: 8.0rem;
+    margin-bottom: 3.3rem;
+}
+.moons .text{
+    max-width:26.5rem ;
+
+}
+.moons .text h2{
+    margin-bottom: 2.0rem;
+}
+.forms {
+    padding:7.8rem 4.0rem 6.5rem ;
+    
+}
+.forms fieldset{
+   display:flex; 
+   flex-direction: column;
+   gap: 2.4rem;
+   border: none;
+   
+   
+}
+.forms fieldset legend{
+    margin-bottom: 4.3rem;
+}
+.forms fieldset div{
+    position: relative;
+}
+.forms fieldset div label{
+    position: absolute;
+    top: 25%;
+    left: 1.4rem;
+   
+    
+}  
+
+.forms fieldset div label img{
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.forms fieldset div input{
+    font-family: "Mulish", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--bg-color-1);
+    width: 100%;
+    height: 4.8rem;
+    border-radius: 1.6rem;
+    border: 1px solid var(--bg-color-1);
+    padding: 1.6rem 1.6rem 1.6rem 5.0rem;
+}
+
+.forms fieldset div textarea{
+    width: 100%;
+    border-radius: 1.6rem;
+    border: 1px solid var(--bg-color-1);
+    padding: 1.6rem;
+    font-family: "Mulish", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--bg-color-1);
+
+
+}
+
+.forms fieldset div button {
+    background-color: var(--bg-color-2);
+    border: 1px solid var(--bg-color-1);
+    border-radius: 1.6rem;
+    color: white;
+    font-family: "Mulish", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1.0rem 1.6rem;
+}
+
+.forms #backgroundDesktop{
+    display: none;
+}
+
+.bg-color{
+    background: linear-gradient(to right, var(--bg-color-2), var(--bg-color-1));
+}
+
+footer{
+    text-align: center;
+    padding: 3.2rem 1.6rem;
+    
+}
+footer p {
+    color: white;
+}
+
+@media (min-width: 1024px) {
+
+    .first-section{
+        display: grid;
+        grid-template-areas:
+        "title astronaut-photo"
+        "img astronaut-photo";
+
+        text-align: start;
+        max-width: 144rem;
+        margin: auto;
+    }
+    .first-section #astronaut-photo{
+        grid-area: astronaut-photo;
+        
+    }
+    .first-section .title{
+        grid-area: title;
+        margin: 31.2rem 0 17.2rem;
+    }
+    .first-section a{
+        grid-area: img;
+    }
+    .first-section h1{
+        font-size: 5.8rem;
+    }
+    .first-section p{
+        font-size: 3.2rem;
+    }
+    h2{
+        font-size: 3.5rem;
+    }
+    p{
+        font-size: 2.0rem;
+    }
+
+    .sectionMoons{
+       flex-direction: row;
+       justify-content: center;
+    }
+
+    .forms{
+        display: flex;
+        padding: 0;
+        justify-content: center;
+    }
+    .forms form{
+        
+      
+        padding: 9.5rem 9.2rem 9.5rem 10.9rem;
+    }
+    
+
+    .forms #backgroundDesktop{
+        display: block;
+        
+    }
+}
+
